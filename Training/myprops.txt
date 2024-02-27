@@ -1,0 +1,5 @@
+#Laptop specifications.
+#Tue Feb 20 18:39:31 IST 2024
+color=black
+name=dell
+model=precision

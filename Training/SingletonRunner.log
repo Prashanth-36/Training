@@ -1,0 +1,12 @@
+Feb 20, 2024 6:39:29 PM t8.SingletonRunner main
+INFO: objname
+Feb 20, 2024 6:39:29 PM t8.SingletonRunner main
+INFO: objname
+Feb 20, 2024 6:39:29 PM t8.SingletonRunner main
+INFO: Name
+Feb 20, 2024 6:39:29 PM t8.SingletonRunner main
+SEVERE: Cannot clone singleton
+java.lang.CloneNotSupportedException: Cannot clone singleton
+	at Training/t8.SingletonClass.clone(SingletonClass.java:41)
+	at Training/t8.SingletonRunner.main(SingletonRunner.java:40)
+

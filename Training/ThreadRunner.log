@@ -1,0 +1,2343 @@
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: Thread-0 Priority: 5 State: NEW
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: Thread-0 Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: Thread-1 Priority: 5 State: NEW
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Name: Thread-0 Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Name: Thread-1 Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: Thread-1 Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: ExtendedThread Priority: 5 State: NEW
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Name: ExtendedThread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: ExtendedThread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Going to sleep: Thread-0
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Going to sleep: Thread-1
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: After sleep: Thread-0
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: myRunnableThread Priority: 5 State: NEW
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Going to sleep: ExtendedThread
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Name: myRunnableThread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: After sleep: Thread-1
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Going to sleep: myRunnableThread
+Feb 21, 2024 7:44:51 PM t9.ThreadRunner main
+INFO: Name: myRunnableThread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: After sleep: myRunnableThread
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Name: runnable-thread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Name: ExtendedClass-thread Priority: 5 State: RUNNABLE
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: Going to sleep: runnable-thread
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: Going to sleep: ExtendedClass-thread
+Feb 21, 2024 7:44:51 PM t9.MyRunnableThread run
+INFO: After sleep: runnable-thread
+Feb 21, 2024 7:44:51 PM t9.MyThreadClass run
+INFO: After sleep: ExtendedClass-thread
+Feb 21, 2024 7:44:56 PM t9.MyThreadClass run
+INFO: After sleep: ExtendedThread
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:01 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:11 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(3)-192.168.10.192" daemon prio=9 Id=34 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(4)-192.168.10.192" daemon prio=9 Id=35 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(3)-192.168.10.192" daemon prio=9 Id=34 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(4)-192.168.10.192" daemon prio=9 Id=35 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:45:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:11 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:21 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=34 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(idle)" daemon prio=9 Id=35 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@1fd14061
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:462)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:361)
+	at java.base@11.0.22/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:937)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1053)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:31 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:41 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:46:51 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "main" prio=5 Id=1 RUNNABLE (in native)
+	at java.base@11.0.22/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@11.0.22/java.io.FileInputStream.read(FileInputStream.java:279)
+	at java.base@11.0.22/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at java.base@11.0.22/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.base@11.0.22/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	...
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@11.0.22/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@11.0.22/java.lang.ref.Reference.processPendingReferences(Reference.java:241)
+	at java.base@11.0.22/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:213)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7a86f3be
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@11.0.22/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:170)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Common-Cleaner" daemon prio=8 Id=19 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2d35e140
+	at java.base@11.0.22/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@11.0.22/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:148)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+	at java.base@11.0.22/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:134)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Thread-0" prio=5 Id=21 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Thread-1" prio=5 Id=22 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "ExtendedThread" prio=5 Id=23 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "myRunnableThread" prio=5 Id=24 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "runnable-thread" prio=5 Id=25 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyRunnableThread.run(MyRunnableThread.java:37)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "ExtendedClass-thread" prio=5 Id=26 TIMED_WAITING
+	at java.base@11.0.22/java.lang.Thread.sleep(Native Method)
+	at app/Training/t9.MyThreadClass.run(MyThreadClass.java:39)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Thread-4" prio=5 Id=27 RUNNABLE
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+	at java.management@11.0.22/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:195)
+	at app/Training/t9.DumpThreads.run(DumpThreads.java:35)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "Attach Listener" daemon prio=9 Id=28 RUNNABLE
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "RMI TCP Accept-0" daemon prio=9 Id=29 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.base@11.0.22/java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:474)
+	at java.base@11.0.22/java.net.ServerSocket.implAccept(ServerSocket.java:551)
+	at java.base@11.0.22/java.net.ServerSocket.accept(ServerSocket.java:519)
+	at jdk.management.agent@11.0.22/sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:394)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:366)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(1)-192.168.10.192" daemon prio=9 Id=30 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "RMI Scheduler(0)" daemon prio=9 Id=31 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48aca935
+	at java.base@11.0.22/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:234)
+	at java.base@11.0.22/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2123)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@11.0.22/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1054)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1114)
+	at java.base@11.0.22/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	...
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "JMX server connection timeout 32" daemon prio=9 Id=32 TIMED_WAITING on [I@1d39cb86
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on [I@1d39cb86
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:171)
+	at java.base@11.0.22/java.lang.Thread.run(Thread.java:834)
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(2)-192.168.10.192" daemon prio=9 Id=33 RUNNABLE (in native)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base@11.0.22/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base@11.0.22/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base@11.0.22/java.io.BufferedInputStream.fill(BufferedInputStream.java:252)
+	at java.base@11.0.22/java.io.BufferedInputStream.read(BufferedInputStream.java:271)
+	at java.base@11.0.22/java.io.FilterInputStream.read(FilterInputStream.java:83)
+	at java.rmi@11.0.22/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:544)
+	...
+
+
+Feb 21, 2024 7:47:01 PM t9.DumpThreads run
+INFO: "RMI TCP Connection(5)-192.168.10.192" daemon prio=9 Id=36 TIMED_WAITING on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.base@11.0.22/java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jmx.remote.internal.ArrayNotificationBuffer@364fef40
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:449)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:227)
+	at java.management@11.0.22/com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:274)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1268)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl$4.run(RMIConnectionImpl.java:1266)
+	at java.management.rmi@11.0.22/javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1272)
+	at java.base@11.0.22/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+

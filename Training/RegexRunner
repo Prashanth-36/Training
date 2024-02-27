@@ -1,0 +1,36 @@
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: Number: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: AlphaNumeric: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: starts with: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: contains: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: ends with: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: matches: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: case insensitive match: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: Email: true
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: hello length is within range. 
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: hi length is within range. 
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO:  length is out of range.
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: welcome length is out of range.
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: {hi=0, hello=1}
+Feb 23, 2024 1:01:31 PM java.util.ArrayList forEach
+INFO: <p>
+Feb 23, 2024 1:01:31 PM java.util.ArrayList forEach
+INFO: <code>
+Feb 23, 2024 1:01:31 PM java.util.ArrayList forEach
+INFO: </code>
+Feb 23, 2024 1:01:31 PM java.util.ArrayList forEach
+INFO: </p>
+Feb 23, 2024 1:01:31 PM t10.RegexRunner main
+INFO: Strong Password: true
